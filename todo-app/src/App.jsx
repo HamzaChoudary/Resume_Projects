@@ -1,16 +1,16 @@
 import React from 'react';
 // import TaskManager from './Components/TaskManager';
-// import Todolist from  './Components/Todolist';
+import Todolist from  './Components/Todolist';
 // import Practice from  './Components/pract.jsx';
-import AddTaskDialog from './Components/AddTaskDialog';
+// import AddTaskDialog from './Components/AddTaskDialog';
 
 function App() {
   return (
     <div className="App">
       {/* <TaskManager /> */}
-      {/* <Todolist /> */}
+      <Todolist />
       {/* <Practice /> */}
-      <AddTaskDialog />
+      {/* <AddTaskDialog /> */}
     </div>
   );
 }
