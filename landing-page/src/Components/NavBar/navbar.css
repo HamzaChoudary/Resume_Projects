@@ -1,0 +1,190 @@
+
+/*
+Fonts
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+Variables
+*/
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-0: rgb(0, 0, 0);
+  --clr-primary-1: #ffffff;
+  --clr-primary-2: hsl(49, 38%, 54%);
+
+  /* Shades  */
+  --clr-red-dark: hsl(360, 67%, 44%);
+
+  /* Transitions  */
+  --transition: all 0.3s linear;
+
+}
+
+
+/*
+Global Styles
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--clr-primary-0);
+  /* padding: 20px; */
+  /* font: 16px neuseit-grotesk; */
+}
+.Header-nav-item:hover {
+  color: var(--clr-primary-2);
+}
+
+
+/* BrakPoints  */
+
+@media screen and (max-width: 640px) {
+  .sidebarr {
+    visibility: hidden;
+  }
+  .sidebar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+  }
+  .head-Nav-Bar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: var(--clr-primary-0);
+    padding: 8px 12px;
+    z-index: 1;
+  }
+
+.sidebar-toggle{
+  position: fixed;
+  top: 9%;
+  right: 6%;
+  width: 7%;
+  font: 16px neuzeit-grotesk 100;
+  margin: 5px;
+  color: var(--clr-primary-2);
+  background:transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Molinari-Travel-logo {
+  padding: 8px;
+}
+
+.Header-branding {
+display: block;
+margin: auto;
+text-align: center;
+font: 16px neuzeit-grotesk;
+line-height: 0;
+}
+
+}
+
+
+/* Second Brakpoints for Nav Bar  */
+
+@media screen and (min-width: 641px) {
+  .sidebar-toggle{
+    visibility: hidden;
+  }
+  .container-1 {
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .Molinari-Travel-logo a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font: 18px neuzeit-grotesk;
+  }
+  .Header-branding {
+    line-height: 0;
+  }
+
+  .Header-nav-inner {
+    position: absolute;
+    top: 8%;
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    font: 15px novecento-sans-wide;
+    font-weight:800;
+    color: var(--clr-primary-1);
+    letter-spacing: 3px;
+    padding-left: 20px;
+  }
+  .Header-nav-inners {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 10px;
+    font: 15px novecento-sans-wide;
+    font-weight: 800;
+    color: var(--clr-primary-1);
+    letter-spacing: 3px;
+  }
+  .Header-nav-item {
+    margin: 0px 30px;
+    padding: 8px 0px;
+  }
+  .Header-nav-items {
+    padding: 8px 0px;
+    margin: 0px 30px;
+  }
+}
+
+/* Third Brakpoints for Nav Bar  */
+
+@media screen and (min-width: 876px) {
+
+  .Header-nav-inner {
+    position: absolute;
+    top:11%;
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    font-size: 15px;
+    font-style: novecento-sans-wide;
+    font-weight:800;
+    color: var(--clr-primary-1);
+    letter-spacing: 3px;
+  }
+}
+
+
+/* fourth Brakpoints for Nav Bar  */
+
+@media screen and (min-width:1084px) {
+
+  
+  .Header-nav-inners {
+    position: absolute;
+    top: 13%;
+    flex-direction: row;
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    font-style: novecento-sans-wide;
+    font-weight:800;
+    color: var(--clr-primary-1);
+    letter-spacing: 3px;
+  }
+  
+}

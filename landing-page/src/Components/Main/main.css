@@ -1,0 +1,1315 @@
+
+
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    /* background color  */
+    --clr-bg-primary-1: hsl(0, 0%, 4%);
+    /* --clr-primary-1: hsl(0, 0%, 100%); */
+    --clr-bg-primary-2:#AB967C;
+    --clr-bg-primary-3: hsl(0, 0%, 100%);
+    --clr-bg-primary-4: hsla(0, 0%, 4%, 0.605);
+    --clr-bg-primary-5: hsla(228, 80%, 16%, 0.833);
+
+
+    /* Colors  */
+    --clr-secondery-1: hsl(0, 0%, 100%);
+    --clr-secondery-2: #212121;
+
+    /* color for button  */
+    --clr-btn-1: hsl(33, 21%, 58%);
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ 
+section {
+    background-color:var(--clr-bg-primary-1);
+}
+
+/* Start from here is body style  */
+
+/* Add here breakpoints for moblie  */
+ 
+@media screen and (max-width: 640px) {
+  main {
+    margin: 20px;
+  }
+
+  .main-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    width: auto;
+  }
+  video  {
+    width: 100%;
+    height: auto;
+  }
+  .upper-text {
+    position: absolute ;
+    top: 45%;
+    padding: 0px 25px 0px 20px;
+    text-align: center;
+    font: 32px 'playfair Display';
+    color: var(--clr-secondery-1);
+    font-stretch: extra-condensed;
+    letter-spacing: .6px;
+    flex: 0 1 auto;
+    z-index: 0;
+  }
+
+  /* Seceond Main section of main area  */
+ 
+   .main-2 {
+  background-color: var(--clr-bg-primary-2);
+  /* margin: 12px 25px 10px 25px; */
+  margin-top: -10px;
+  /* width: 100%; */
+  padding: 20px;
+} 
+ .h4 {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  font-weight: 100;
+  font: 21px novecento-sans-wide;
+  margin: 0px 0px 21px;
+  letter-spacing: 1.4px;
+  font-size: 1.3rem;
+  color: var(--clr-secondery-2);
+} 
+.h3 {
+  text-align: center;
+  margin: 15px 0px 0px;
+  padding: 10px 10px 20px 10px;
+  color: var(--clr-secondery-2);
+  font-weight: 700;
+  font: 28px 'playfair Display';
+  letter-spacing: .6px;
+  font-size: 1.7em;
+}
+.main2-paragraph-0 {
+  text-align: center;
+  font: 16pxpx novecento-sans-wide;
+  padding: 17px;
+  letter-spacing: 2px;
+  font-stretch: normal;
+  margin: 30% 24%;
+}
+.main2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 10%;
+  /* padding: 17px; */
+}
+.main2-img1, .main2-img2, .main2-img3 {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  padding: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main2-paragraph-1, .main2-paragraph-2, .main2-paragraph-3 {
+  padding: 17px;
+  font-stretch: normal;
+  text-align: justify;
+  font: 16px neuseit-grotesk;
+}
+.main-3 {
+  background-color: var(--clr-bg-primary-3); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.main3-artucle-img4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.main3-article {
+  color:var(--clr-bg-primary-1);
+  padding: 17px;
+}
+.main3-container-Head1 {
+  padding-top: 10px;
+  text-align: left;
+  letter-spacing: 1.1px;
+  /* font-weight: 600; */
+  font: 28px 'playfair Display';
+  margin: 0px 0px 23.24px;
+}
+.main3-container-sub-Head1 {
+  /* font-weight: 100; */
+  letter-spacing: 1.1px;
+  text-align:left;
+  font: 16px neuseit-grotesk;
+  margin: 16px 0px;
+}
+.main3-container-sub-Head1 strong {
+  font-weight: 500;
+}
+.main3-container-sub-Head2 {
+  text-transform: capitalize;
+  text-align: left;
+  font: 21px novecento-sans-wide;
+  margin: 21px 0px 0px;
+  padding-bottom: 20px;
+}
+.main3-btn-1 {
+  background-color: var(--clr-bg-primary-2);
+  outline: none;
+  border:none ;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font: 13px novecento-sans-wide;
+  padding: 13px 26px; 
+}
+.main3-btn-1:hover {
+  background-color: var(--clr-primary-3);
+}
+
+
+/* Fourth Mian section  */
+
+.main-4 {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:var(--clr-bg-primary-3);
+}
+.main4-video {
+  width: 100%;
+  height: auto;
+}
+.main4-container-1 {
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+.main4-head1 {
+  position: absolute;
+  top: 18%;
+  right: 20%;
+  margin: auto;
+  letter-spacing: 1.3px;
+  font: 21px novecento-sans-wide;
+  padding: 17px;
+}
+.main4-sub-head1 {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  font: 32px 'playfair Display';
+  padding: 17px;
+}
+.main4-btn-1 {
+  position: absolute;
+  top: 55%;
+  left: 28%;
+  background: transparent;
+  border: 2px solid white;
+  color: var(--clr-bg-primary-3);
+  letter-spacing: 1.2px;
+  font: 15px novecento-sans;
+  padding: 21px 34px;
+  margin: 17px;
+}
+.main4-btn-1:hover {
+  background-color: var(--clr-grey-5);
+}
+
+/* fifth main section start here  */
+.main-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  z-index: 0;
+}
+.main5-img-7 {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 17px;
+}
+.main5-container-1 {
+  text-align: left;
+  padding: 17px;
+}
+.main5-head1 {
+  font: 28px 'Playfair Display';
+  margin: 0px 0px 23.24px;
+}
+.main5-sub-head1 {
+  font: 16px neuzeit-grotesk;
+  margin: 16px 0px;
+}
+.main5-paragraph-7 {
+  font: 21px novecento-sans-wide;
+  margin: 21px 0px 0px;
+}
+.main5-btn-1 {
+  font: 13px novecento-sans-wide;
+  padding: 17px;
+  background-color: var(--clr-bg-primary-2);
+  padding: 13px 26px;
+  outline: none;
+  border: none;
+  margin: 15px;
+}
+
+
+/* sixth Main section start  */
+
+.main-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-bg-primary-2);
+  margin: 10px;
+}
+.main6-container {
+  padding: 17px;
+  text-align: center;
+
+}
+.main6-head1 {
+  font-stretch: normal;
+  font: 28px Helvetica, sans-serif;
+  padding: 15px 0px;
+}
+.main6-head2 {
+  font: 16px Helvetica, sans-serif;
+  padding: 15px ;
+}
+input {
+  padding: 12px 20px;
+  margin: 10px 0px 0px;
+}
+.main6-btn-1 {
+  font: 13px Helvetica, sans-serif;
+  padding: 12px 20px;
+  margin: 10px 5px 0px;
+  background-color: var(--clr-bg-primary-1);
+  color: var(--clr-bg-primary-3);
+  letter-spacing: 1.2px;
+  outline: none;
+  border: none;
+}
+
+/* eight section start  */
+.main-8 {
+  position: relative;
+  text-align: center;
+  padding: 17px;
+  z-index: 0;
+}
+.main8-img-6 {
+  width: 100%;
+  /* max-width: ; */
+  height: auto;
+}
+.main8-paragraph-6 {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  font: 5px sans-serif;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 20px;
+  color: white;
+  height: max-content;
+}
+
+}
+
+
+/* Here Start the Tablets and small screens breakpoints  */
+
+
+
+@media screen and (min-width: 641px ) {
+
+  main {
+    margin: 0px 25px;
+    font: 16px neuzeit-grotesk;
+  }
+  .main-1 {
+    position: relative;
+    text-align: center;
+    color: var(--clr-bg-primary-3);
+    /* padding: 50px 36px; */
+}
+video {
+  width:100%;
+  height: auto;
+  max-height: max-content;
+}
+.upper-text {
+    position: absolute;
+    top: 25%;
+    font: 43px 'Playfair Display';
+    padding: 0px 17px;
+}
+
+/* Second Main area  */
+
+.main-2 {
+    background-color: var(--clr-bg-primary-2);
+    width: 100%;
+    height: auto;
+    font: 16px neuzeit-grotesk;
+    padding: 50px 6px;
+    text-align: center;
+    margin-top: -5px;
+}
+.h4 {
+    font: 21px novecento-sans-wide;
+    margin: 0px 0px 21px;
+    letter-spacing: 1.8px;
+    color: var(--clr-secondery-2);
+}
+.h3 {
+  font: 29px "Playfair Display";
+  margin: 15px 0px 0px;
+    color: var(--clr-secondery-2);
+    letter-spacing: .6px;
+    padding: 0px 17px 17px;
+}
+.main2-paragraph-0 {
+  font: 21px novecento-sans-wide;
+  padding: 17px;
+    color: var(--clr-secondery-2);
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-top: 5pc;
+}
+ .main2-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin: 50px 40px;
+}
+.main2-img1, .main2-img3 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 17px;
+}
+
+.main2-img2 {
+  border-radius: 50%;
+  height:130px;
+  width: 130px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 17px;
+}
+.main2-paragraph-1, .main2-paragraph-2, .main2-paragraph-3 {
+    color: var(--clr-secondery-2);
+    font: 16px neuzeit-grotesk;
+    padding: 29px;
+}
+
+/* Third section  */
+
+.main-3 {
+  background-color: var(--clr-bg-primary-3);
+  font: 16px neuzeit-grotesk;
+  padding: 50px 36px;
+}
+.main3-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main3-artucle-img4 {
+  width: 60%;
+  height: auto;
+  padding: 0px 17px;
+}
+.main3-container {
+  margin-left: -90px;
+}
+
+.main3-container-Head1 {
+  font: 29px 'Playfair Display';
+  margin: 0px 0px 24.7px;
+  color: black;
+  text-align: left;
+  letter-spacing: 1.3px;
+}
+.main3-container-sub-Head1 {
+  font: 16px neuzeit-grotesk;
+  margin: 16px 0px;
+  letter-spacing: 1.5px;
+  text-align: left;
+}
+.text-2 strong {
+  font-weight: 600;
+}
+.main3-container-sub-Head2 {
+  font: 21px novecento-sans-wide;
+  margin: 21px 0px 0px;
+  text-transform: capitalize;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.main3-btn-1 {
+  font: 13px novecento-sans-wide;
+  padding: 13px 26px;
+  background-color: var(--clr-bg-primary-2);
+  outline: none;
+  border:none ;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background-color: var(--clr-primary-3);
+}
+
+/* Fourth Mian section  */
+.main-4 {
+  position: relative;
+  text-align: center;
+
+}
+.main4-video {
+  width: 100%;
+  height: auto;
+}
+.main4-head1 {
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  font: 21px novecento-sans-wide;
+  padding: 17px;
+  text-align: center;
+  color: var(--clr-secondery-1);
+  letter-spacing: 1.3px;
+}
+.main4-sub-head1 {
+  position: absolute;
+  top: 38%;
+  left: 10%;
+  font: 43px 'Playfair Display';
+  color: var(--clr-secondery-1);
+  padding: 17px;
+  letter-spacing: 1px;
+}
+.main4-btn-1{
+  position: absolute;
+  top: 55%;
+  left: 43%;
+  font: 15px novecento-sans;
+  padding: 21px 34px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--clr-secondery-1);
+  border: 2px solid white;
+  letter-spacing: 1.2px;
+}
+.btn-2:hover {
+  background-color: var(--clr-grey-5);
+}
+
+/* Here start the Section main-5  */
+.main-5  {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--clr-bg-primary-3);
+  color: var(--clr-secondery-1);
+}
+.main5-img-7 {
+  width: 60%;
+  height: auto;
+  padding: 0px 17px;
+}
+.main5-container-1 {
+  text-align: left;
+  color:black;
+  margin-left: -90px;
+  padding: 0px 17px 17px;
+}
+.main5-head1 {
+  font: 29px "Playfair Display";
+  margin: 0px 0px 24.07px;
+  padding-bottom: 10px;
+  letter-spacing: 1.2px;
+}
+.main5-sub-head1 {
+  font: 16px neuzeit-grotesk;
+  margin: 16px 0px;
+  letter-spacing: .5px;
+}
+.main5-paragraph-7 {
+  font: 21px novecento-sans-wide;
+  margin: 21px 0px 0px;
+  text-align: left;
+  color: var(--clr-secondery-1);
+}
+.main5-btn-1 {
+  font: 13px novecento-sans-wide;
+  padding: 13px 26px;
+  letter-spacing: 1.4px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--clr-btn-1);
+  text-transform: capitalize;
+}
+
+/* sixth Main section start  */
+.main-6 {
+  background-color: var(--clr-btn-1);
+  color: var(--clr-bg-primary-1);
+  margin: 20px 30px;
+  padding: 30px;
+}
+.main6-head1 {
+  font: 28px Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+.main6-head2 {
+  font: 16px Helvetica, sans-serif;
+  letter-spacing: .3px;
+  text-align: center;
+  margin-top: 20px;
+}
+.main6-contain1 {
+  font: 16px Helvetica, sans-serif;
+  margin: 40px 15px;
+  place-self: center;
+}
+#main6-input1 {
+  padding: 12px 70px;
+  border-radius: 1%;
+  border: 1px solid black;
+  margin: 10px;
+}
+#main6-input2 {
+  padding: 12px 70px;
+  border-radius: 1%;
+  border: 1px solid black;
+  margin: 10px;
+}
+.main6-btn-1 {
+  font: 13px Helvetica, sans-serif;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  background-color: var(--clr-bg-primary-1);
+  color: var(--clr-secondery-1);
+  margin: auto;
+}
+
+/* The article is pending  */
+/* Seventh section start here  */
+
+
+
+
+/* eight section start  */
+.main-8 {
+  position: relative;
+  text-align: center;
+  padding:  0px 17px 17px;
+  margin: 0px -17px;
+}
+.main8-img-6 {
+  width: 100%;
+  height: auto;
+}
+.main8-paragraph-6 {
+  position: absolute;
+  top: 10%;
+  /* left: 10%; */
+  font: 12px normal;
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+  border: 2px solid white;
+  background-color: var(--clr-bg-primary-4) ;
+  color: var(--clr-secondery-1);
+  height: max-content;
+}
+}
+
+
+
+
+
+
+
+/* Third breakpoints for responsive website  */
+
+@media screen and (min-width: 881px ) {
+
+  main {
+    margin: 0px 25px;
+    font: 16px neuzeit-grotesk;
+  }
+  .main-1 {
+    position: relative;
+    text-align: center;
+    color: var(--clr-bg-primary-3);
+    /* padding: 50px 36px; */
+}
+video {
+  width:100%;
+  height: auto;
+  max-height: max-content;
+}
+.upper-text {
+    position: absolute;
+    top: 25%;
+    font: 43px 'Playfair Display';
+    padding: 0px 17px;
+}
+
+/* Second Main area  */
+
+.main-2 {
+    background-color: var(--clr-bg-primary-2);
+    width: 100%;
+    height: auto;
+    font: 16px neuzeit-grotesk;
+    padding: 50px 6px;
+    text-align: center;
+    margin-top: -5px;
+}
+.h4 {
+    font: 21px novecento-sans-wide;
+    margin: 0px 0px 21px;
+    letter-spacing: 1.8px;
+    color: var(--clr-secondery-2);
+}
+.h3 {
+  font: 29px "Playfair Display";
+  margin: 15px 0px 0px;
+    color: var(--clr-secondery-2);
+    letter-spacing: .6px;
+    padding: 0px 27px 17px;
+}
+.main2-paragraph-0 {
+  font: 21px novecento-sans-wide;
+  padding: 17px;
+    color: var(--clr-secondery-2);
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-top: 5pc;
+}
+ .main2-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin: 50px 40px;
+}
+.main2-img1, .main2-img3 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 17px;
+}
+
+.main2-img2 {
+  border-radius: 50%;
+  height:130px;
+  width: 130px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 17px;
+}
+.main2-paragraph-1, .main2-paragraph-2, .main2-paragraph-3 {
+    color: var(--clr-secondery-2);
+    font: 16px neuzeit-grotesk;
+    padding: 39px;
+}
+
+/* Third section  */
+
+.main-3 {
+  background-color: var(--clr-bg-primary-3);
+  font: 16px neuzeit-grotesk;
+  padding: 50px 36px;
+}
+.main3-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main3-artucle-img4 {
+  width: 60%;
+  height: auto;
+  padding: 0px 17px;
+}
+.main3-container {
+  margin-left: -90px;
+}
+
+.main3-container-Head1 {
+  font: 29px 'Playfair Display';
+  margin: 0px 0px 24.7px;
+  color: black;
+  text-align: left;
+  letter-spacing: 1.3px;
+}
+.main3-container-sub-Head1 {
+  font: 16px neuzeit-grotesk;
+  margin: 16px 0px;
+  letter-spacing: 1.5px;
+  text-align: left;
+}
+.text-2 strong {
+  font-weight: 600;
+}
+.main3-container-sub-Head2 {
+  font: 21px novecento-sans-wide;
+  margin: 21px 0px 0px;
+  text-transform: capitalize;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.main3-btn-1 {
+  font: 13px novecento-sans-wide;
+  padding: 13px 26px;
+  background-color: var(--clr-bg-primary-2);
+  outline: none;
+  border:none ;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background-color: var(--clr-primary-3);
+}
+
+/* Fourth Mian section  */
+.main-4 {
+  position: relative;
+  text-align: center;
+
+}
+.main4-video {
+  width: 100%;
+  height: auto;
+}
+.main4-head1 {
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  font: 21px novecento-sans-wide;
+  padding: 17px;
+  text-align: center;
+  color: var(--clr-secondery-1);
+  letter-spacing: 1.3px;
+}
+.main4-sub-head1 {
+  position: absolute;
+  top: 38%;
+  left: 10%;
+  font: 43px 'Playfair Display';
+  color: var(--clr-secondery-1);
+  padding: 17px;
+  letter-spacing: 1px;
+}
+.main4-btn-1{
+  position: absolute;
+  top: 55%;
+  left: 43%;
+  font: 15px novecento-sans;
+  padding: 21px 34px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--clr-secondery-1);
+  border: 2px solid white;
+  letter-spacing: 1.2px;
+}
+.btn-2:hover {
+  background-color: var(--clr-grey-5);
+}
+
+/* Here start the Section main-5  */
+.main-5  {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--clr-bg-primary-3);
+  color: var(--clr-secondery-1);
+}
+.main5-img-7 {
+  width: 60%;
+  height: auto;
+  padding: 0px 17px;
+}
+.main5-container-1 {
+  text-align: left;
+  color:black;
+  margin-left: -90px;
+  padding: 0px 17px 17px;
+}
+.main5-head1 {
+  font: 29px "Playfair Display";
+  margin: 0px 0px 24.07px;
+  padding-bottom: 10px;
+  letter-spacing: 1.2px;
+}
+.main5-sub-head1 {
+  font: 16px neuzeit-grotesk;
+  margin: 16px 0px;
+  letter-spacing: .5px;
+}
+.main5-paragraph-7 {
+  font: 21px novecento-sans-wide;
+  margin: 21px 0px 0px;
+  text-align: left;
+  color: var(--clr-secondery-1);
+}
+.main5-btn-1 {
+  font: 13px novecento-sans-wide;
+  padding: 13px 26px;
+  letter-spacing: 1.4px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--clr-btn-1);
+  text-transform: capitalize;
+}
+
+/* sixth Main section start  */
+.main-6 {
+  background-color: var(--clr-btn-1);
+  color: var(--clr-bg-primary-1);
+  margin: 20px 30px;
+  padding: 30px;
+}
+.main6-head1 {
+  font: 28px Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+.main6-head2 {
+  font: 16px Helvetica, sans-serif;
+  letter-spacing: .3px;
+  text-align: center;
+  margin-top: 20px;
+}
+.main6-contain1 {
+  font: 16px Helvetica, sans-serif;
+  margin: 40px 15px;
+  place-self: center;
+}
+#main6-input1 {
+  padding: 12px 40px;
+  border-radius: 1%;
+  border: 1px solid black;
+  margin: 10px;
+}
+#main6-input2 {
+  padding: 12px 40px;
+  border-radius: 1%;
+  border: 1px solid black;
+  margin: 10px;
+}
+.main6-btn-1 {
+  font: 13px Helvetica, sans-serif;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  background-color: var(--clr-bg-primary-1);
+  color: var(--clr-secondery-1);
+  margin: auto;
+}
+
+/* The article is pending  */
+/* Seventh section start here  */
+
+
+
+
+/* eight section start  */
+.main-8 {
+  position: relative;
+  text-align: center;
+  padding:  0px 17px 17px;
+  margin: 0px -17px;
+}
+.main8-img-6 {
+  width: 100%;
+  height: auto;
+}
+.main8-paragraph-6 {
+  position: absolute;
+  top: 10%;
+  /* left: 10%; */
+  font: 12px normal;
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+  border: 2px solid white;
+  background-color: var(--clr-bg-primary-4) ;
+  color: var(--clr-secondery-1);
+  height: max-content;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Third breakpoints for responsive website  */
+
+@media screen and (min-width: 1181px ) {
+
+  main {
+    margin: 0px 25px;
+    font: 16px neuzeit-grotesk;
+  }
+  .main-1 {
+    position: relative;
+    text-align: center;
+    color: var(--clr-bg-primary-3);
+    /* padding: 50px 36px; */
+}
+video {
+  width:100%;
+  height: auto;
+  max-height: min-content;
+}
+.upper-text {
+    position: absolute;
+    top: 25%;
+    font: 43px 'Playfair Display';
+    /* padding: 0px 17px; */
+}
+
+/* Second Main area  */
+
+.main-2 {
+    background-color: var(--clr-bg-primary-2);
+    width: 100%;
+    height: auto;
+    font: 16px neuzeit-grotesk;
+    padding: 50px 6px;
+    text-align: center;
+    margin-top: -5px;
+}
+.h4 {
+    font: 21px novecento-sans-wide;
+    margin: 0px 0px 21px;
+    letter-spacing: 1.8px;
+    color: var(--clr-secondery-2);
+}
+.h3 {
+  font: 29px "Playfair Display";
+  margin: 15px 0px 0px;
+    color: var(--clr-secondery-2);
+    letter-spacing: .6px;
+    padding: 0px 27px 17px;
+}
+.main2-paragraph-0 {
+  font: 21px novecento-sans-wide;
+  padding: 17px;
+    color: var(--clr-secondery-2);
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-top: 5pc;
+}
+ .main2-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin: 50px 40px;
+}
+.main2-img1, .main2-img3 {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 17px;
+}
+
+.main2-img2 {
+  border-radius: 50%;
+  height:280px;
+  width: 280px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 17px;
+}
+.main2-paragraph-1, .main2-paragraph-2, .main2-paragraph-3 {
+    color: var(--clr-secondery-2);
+    font: 16px neuzeit-grotesk;
+    padding: 17px;
+}
+
+/* Third section  */
+
+.main-3 {
+  background-color: var(--clr-bg-primary-3);
+  font: 16px neuzeit-grotesk;
+  padding: 50px 36px;
+}
+.main3-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main3-artucle-img4 {
+  width: 60%;
+  height: auto;
+  padding: 0px 17px;
+}
+.main3-container {
+  margin-left: -200px;
+}
+
+.main3-container-Head1 {
+  font: 27px 'Playfair Display';
+  margin: 0px 0px 20.7px;
+  color: black;
+  text-align: left;
+  letter-spacing: 1.3px;
+}
+.main3-container-sub-Head1 {
+  font: 15px neuzeit-grotesk;
+  margin: 15px 0px;
+  letter-spacing: 1.5px;
+  text-align: left;
+}
+.text-2 strong {
+  font-weight: 600;
+}
+.main3-container-sub-Head2 {
+  font: 20px novecento-sans-wide;
+  margin: 20px 0px 0px;
+  text-transform: capitalize;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.main3-btn-1 {
+  font: 13px novecento-sans-wide;
+  padding: 13px 26px;
+  background-color: var(--clr-bg-primary-2);
+  outline: none;
+  border:none ;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background-color: var(--clr-primary-3);
+}
+
+/* Fourth Mian section  */
+.main-4 {
+  position: relative;
+  text-align: center;
+
+}
+.main4-video {
+  width: 100%;
+  height: auto;
+}
+.main4-head1 {
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  font: 21px novecento-sans-wide;
+  padding: 17px;
+  text-align: center;
+  color: var(--clr-secondery-1);
+  letter-spacing: 1.3px;
+}
+.main4-sub-head1 {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  font: 43px 'Playfair Display';
+  color: var(--clr-secondery-1);
+  padding: 17px;
+  letter-spacing: 1px;
+}
+.main4-btn-1{
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  font: 15px novecento-sans;
+  padding: 21px 34px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--clr-secondery-1);
+  border: 2px solid white;
+  letter-spacing: 1.2px;
+}
+.btn-2:hover {
+  background-color: var(--clr-grey-5);
+}
+
+/* Here start the Section main-5  */
+.main-5  {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--clr-bg-primary-3);
+  color: var(--clr-secondery-1);
+  padding: 50px 36px;
+}
+.main5-img-7 {
+  width: 60%;
+  height: auto;
+  padding: 0px 17px;
+}
+.main5-container-1 {
+  text-align: left;
+  color:black;
+  margin-left: -200px;
+  padding: 0px 17px 17px;
+}
+.main5-head1 {
+  font: 29px "Playfair Display";
+  margin: 0px 0px 24.07px;
+  padding-bottom: 10px;
+  letter-spacing: 1.2px;
+}
+.main5-sub-head1 {
+  font: 16px neuzeit-grotesk;
+  margin: 16px 0px;
+  letter-spacing: .5px;
+}
+.main5-paragraph-7 {
+  font: 21px novecento-sans-wide;
+  margin: 21px 0px 0px;
+  text-align: left;
+  color: var(--clr-secondery-1);
+}
+.main5-btn-1 {
+  font: 13px novecento-sans-wide;
+  padding: 13px 26px;
+  letter-spacing: 1.4px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--clr-btn-1);
+  text-transform: capitalize;
+}
+
+/* sixth Main section start  */
+.main-6 {
+  background-color: var(--clr-btn-1);
+  color: var(--clr-bg-primary-1);
+  margin: 20px 30px;
+  padding: 30px;
+}
+.main6-head1 {
+  font: 28px Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+.main6-head2 {
+  font: 16px Helvetica, sans-serif;
+  letter-spacing: .3px;
+  text-align: center;
+  margin-top: 20px;
+}
+.main6-contain1 {
+  font: 16px Helvetica, sans-serif;
+  margin: 40px 15px;
+  place-self: center;
+}
+#main6-input1 {
+  padding: 14px 120px;
+  border-radius: 1%;
+  border: 1px solid black;
+  margin: 10px;
+}
+#main6-input2 {
+  padding: 14px 120px;
+  border-radius: 1%;
+  border: 1px solid black;
+  margin: 10px;
+}
+.main6-btn-1 {
+  font: 13px Helvetica, sans-serif;
+  padding: 14px 22px;
+  border: none;
+  outline: none;
+  background-color: var(--clr-bg-primary-1);
+  color: var(--clr-secondery-1);
+  margin: auto;
+}
+
+/* The article is pending  */
+/* Seventh section start here  */
+
+
+
+
+/* eight section start  */
+.main-8 {
+  position: relative;
+  text-align: center;
+  padding:  0px 17px 17px;
+  margin: 0px -17px;
+}
+.main8-img-6 {
+  width: 100%;
+  height: auto;
+}
+.main8-paragraph-6 {
+  position: absolute;
+  top: 10%;
+  /* left: 10%; */
+  font: 12px normal;
+  padding: 30px;
+  margin: 50px;
+  text-align: center;
+  border: 2px solid white;
+  background-color: var(--clr-bg-primary-4) ;
+  color: var(--clr-secondery-1);
+  height: max-content;
+}
+}

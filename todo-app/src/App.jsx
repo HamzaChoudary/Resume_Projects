@@ -1,22 +1,16 @@
 import React from 'react';
-// import TodoList from './Components/Todo-List';
-// import TaskModel from './Components/Task-Model';
-// import TaskForm from './Components/descriptin';
-// import MultiUnderlineText from './Components/underline';
-// import TasksManagers from './Components/underline';
-// import DisplayValue from './Components/Exampletest';
-import Todolist from './Components/Todolist';
+// import TaskManager from './Components/TaskManager';
+// import Todolist from  './Components/Todolist';
+// import Practice from  './Components/pract.jsx';
+import AddTaskDialog from './Components/AddTaskDialog';
 
 function App() {
   return (
     <div className="App">
-      {/* <TodoList /> */}
-      {/* <TaskModel /> */}
-      {/* <MultiUnderlineText /> */}
-      {/* <TaskForm /> */}
-      {/* <TasksManagers /> */}
-      {/* <DisplayValue /> */}
-      <Todolist />
+      {/* <TaskManager /> */}
+      {/* <Todolist /> */}
+      {/* <Practice /> */}
+      <AddTaskDialog />
     </div>
   );
 }

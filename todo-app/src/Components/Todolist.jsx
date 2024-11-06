@@ -177,7 +177,8 @@ const App = () => {
               {/* Task List */}
               <ul>
                 {getFilteredTasks().map((task, taskIndex) => (
-                  <li key={taskIndex} className="p-4 bg-gray-100 mb-2 flex justify-between items-center">
+                  <div className="hover:bg-green-500">
+                    <li key={taskIndex} className="p-4 mb-2 flex justify-between items-center">
                     <div>
                       <h3 className="text-xl">{task.name}</h3>
                       <p>{task.description}</p>
@@ -212,6 +213,7 @@ const App = () => {
                       </button>
                     </div>
                   </li>
+                  </div>
                 ))}
               </ul>
 
