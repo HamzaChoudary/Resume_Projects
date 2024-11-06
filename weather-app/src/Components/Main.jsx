@@ -8,7 +8,7 @@ const Main = () => {
     const [Weather, setWeather] = useState(null);
     const [Error, setError] = useState('');
 
-    const apiKey = 'f7f333f5a1095403573c160fd94e0a86';
+    // const apiKey = Process.env.REACT_APP_WEATHER_API_KEY;
 
     // Functionality 
     const handleSearch = async () =>  {
@@ -16,7 +16,7 @@ const Main = () => {
         // Add for error 
         try {
             const response = await axios.get(`
-                https:api.openweathermap.org/data/2.5/weather?q=${City}&units=metric&appid=${apiKey}`
+                https:api.openweathermap.org/data/2.5/weather?q=${City}&units=metric&appid=${Process.env.REACT_APP_WEATHER_API_KEY}`
                 );
             setWeather(response.data);
             setError('');
